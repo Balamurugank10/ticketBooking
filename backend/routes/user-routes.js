@@ -1,6 +1,6 @@
 import express from "express";
 import { deleteUser, getAllUsers,getBookingsOfUser,
-    getUserById, signup, updateUser ,login} from "../controllers/user-controller";
+    getUserById, signup, updateUser ,login} from "../controllers/user-controller.js";
 
 const userRouter = express.Router();
 
