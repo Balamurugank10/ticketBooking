@@ -34,7 +34,7 @@ mongoose.connect(
     `mongodb+srv://admin:${process.env.MONGODB_PASSWORD}@cluster0.iw5deb5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
 )
 .then(() => {
-    app.listen(5000, () => console.log("Connected to Database and server is running on port 5000"));
+    app.listen(5000,"0.0.0.0", () => console.log("Connected to Database and server is running on port 5000"));
 })
 .catch((error) => {
     console.error("Error connecting to the database", error);
